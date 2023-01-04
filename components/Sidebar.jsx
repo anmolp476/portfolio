@@ -1,11 +1,23 @@
-import React from 'react'
+import classNames from 'classnames'
+import React, { useState } from 'react';
 
 const Sidebar = () => {
-  return (
-    <div className='h-screen px-4 pt-8 pb-4 bg-light flex justify-between flex-col w-80'>
-        Sidebar
-    </div>
-  )
+
+    const [sideBar, toggleSidebar] = useState(false);
+
+    const divCSS = classNames('h-screen px-4 pt-8 pb-4 bg-light flex justify-between flex-col w-80',
+                    {
+                        'w-80': !sideBar,
+                        'w-20': sideBar
+                    });
+
+    return (
+        <div className={divCSS}>
+            <div className='flex flex-col'>
+                <div className='flex item-center pl-1 gap-4'></div>
+            </div>
+        </div>
+    )
 }
 
 export default Sidebar
