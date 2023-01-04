@@ -5,7 +5,7 @@ const Layout = () => {
   return (
     <div className="h-screen flex flex-row justify-start">
         <Sidebar/>
-        <div className="bg-blue-900 flex-1 p-4 text-white">
+        <div className="flex-1 p-4 text-white bg-gray-900">
             Portfolio.
         </div>
     </div>

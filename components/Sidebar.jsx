@@ -1,5 +1,7 @@
 import classNames from 'classnames'
 import React, { useState } from 'react';
+import {RiComputerFill, RiComputerLine} from 'react-icons/ri';
+import {FaBars} from 'react-icons/fa';
 
 const Sidebar = () => {
 
@@ -11,11 +13,30 @@ const Sidebar = () => {
                         'w-20': sideBar
                     });
 
+    const logoIconStyle = 
+    {
+        color: 'blue',
+        fontSize: '2em',
+    }
+
+    const collapseIconStyle = classNames("p-4 rounded bg-light-lighter absolute right-0", 
+    {
+        "rotate-180":sideBar,
+    })
+
     return (
         <div className={divCSS}>
             <div className='flex flex-col'>
-                <div className='flex items-center pl-1 gap-4 border border-dashed'>
-                    
+                <div className="border border-dashed flex items-center justify-between relative">
+                    <div className='flex items-center pl-1 gap-4 border border-dashed'>
+                        <RiComputerLine style={logoIconStyle}/>
+                        <span className={classNames('mt-2 text-lg font-medium text-white', {hidden:sideBar})}>
+                            Logo
+                        </span>
+                    </div>
+                    <button className={collapseIconStyle}>
+                        <FaBars style={{color:"blue"}}/>
+                    </button>
                 </div>
             </div>
         </div>
