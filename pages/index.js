@@ -1,12 +1,11 @@
 
-import Sidebar from '../components/Sidebar'
+import Layout from '../components/Layout'
 
 
 export default function Home() {
   return (
     <div className="">
-      <Sidebar/>
-      Portfolio.
+      <Layout/>
     </div>
   )
 }
