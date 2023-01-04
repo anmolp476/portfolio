@@ -14,7 +14,9 @@ const Sidebar = () => {
     return (
         <div className={divCSS}>
             <div className='flex flex-col'>
-                <div className='flex item-center pl-1 gap-4'></div>
+                <div className='flex items-center pl-1 gap-4 border border-dashed'>
+                    
+                </div>
             </div>
         </div>
     )
