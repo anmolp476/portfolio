@@ -7,6 +7,8 @@ const Sidebar = () => {
 
     const [sideBar, toggleSidebar] = useState(false);
 
+    const [toggleBars, toggleTheBars] = useState(false);
+
     const divCSS = classNames('h-screen px-4 pt-8 pb-4 bg-light flex justify-between flex-col w-80',
                     {
                         'w-80': !sideBar,
@@ -19,13 +21,26 @@ const Sidebar = () => {
         fontSize: '2em',
     }
 
-    const collapseIconStyle = classNames("p-4 rounded bg-light-lighter absolute right-0", 
+    const collapseIconStyle = "p-4 rounded bg-light-lighter absolute right-0"
+
+    const handleCollapse = () =>
     {
-        "rotate-180":sideBar,
-    })
+        toggleSidebar(!sideBar);
+    }
+
+    const mouseDetected = () =>
+    {
+        toggleTheBars(!toggleBars);
+    }
+
 
     return (
-        <div className={divCSS}>
+        <div className={divCSS} 
+
+            onMouseEnter={mouseDetected}
+            onMouseLeave={mouseDetected}
+            
+            >
             <div className='flex flex-col'>
                 <div className="border border-dashed flex items-center justify-between relative">
                     <div className='flex items-center pl-1 gap-4 border border-dashed'>
@@ -34,9 +49,9 @@ const Sidebar = () => {
                             Logo
                         </span>
                     </div>
-                    <button className={collapseIconStyle}>
+                    {toggleBars && <button className={collapseIconStyle} onClick={handleCollapse}>
                         <FaBars style={{color:"blue"}}/>
-                    </button>
+                    </button>}
                 </div>
             </div>
         </div>
