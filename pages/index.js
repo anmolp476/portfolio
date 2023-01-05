@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <div className="w-3/5 absolute top-36">
+      <div className="w-3/5 absolute top-28">
         <p className="text-7xl">
           Hi, <br></br>My name is <span className="text-blue-800">Anmol</span><br></br>
           I'm a
@@ -18,7 +18,7 @@ export default function Home() {
             1000,
             `Software Engineering Student 🦾`,
             1000,
-            'Origami Enthusiast 📃',
+            'Origami Enthusiast 📄',
             1000
           ]}
           wrapper='span'
