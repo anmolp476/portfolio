@@ -1,8 +1,8 @@
 import classNames from 'classnames'
 import React, { useMemo, useState } from 'react';
 import {RiComputerFill, RiComputerLine, 
-        RiToolsFill, AiFillHome, AiOutlineCode, AiFillCode, 
-        RiBriefcaseLine, RiBriefcaseFill, RiMailLine, RiMailFill} from 'react-icons/ri';
+        RiToolsFill, RiBriefcaseLine, RiBriefcaseFill, RiMailLine, RiMailFill} from 'react-icons/ri';
+import {AiOutlineCode, AiFillCode, AiFillHome, AiOutlineHome} from 'react-icons/ai'
 import {FaBars} from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
@@ -13,11 +13,11 @@ const Sidebar = () => {
 
     const menuArray = 
     [
-        {id: 1, label: "Home", icon: AiFillHome, link:"/"},
-        {id: 2, label: "Skills", icon: RiToolsFill, link:"/skills"},
-        {id: 3, label: "Projects", icon: AiOutlineCode, link:"/projects"},
-        {id: 4, label: "Experience", icon: RiBriefcaseLine, link:"/experience"},
-        {id: 5, label: "Contact Me", icon: RiMailLine, link:"/contact"},
+        {id: 1, label: "Home", Icon: AiFillHome, link:"/"},
+        {id: 2, label: "Skills", Icon: RiToolsFill, link:"/skills"},
+        {id: 3, label: "Projects", Icon: AiOutlineCode, link:"/projects"},
+        {id: 4, label: "Experience", Icon: RiBriefcaseLine, link:"/experience"},
+        {id: 5, label: "Contact Me", Icon: RiMailLine, link:"/contact"},
     ]
 
 
@@ -80,22 +80,25 @@ const Sidebar = () => {
                     </button>
 
                     <div className="flex flex-col items-start absolute top-28">
-                        {menuArray.map(({icon: Icon, ...menu}) => 
+                        {menuArray.map((item) => 
                         {
-                            const theClasses = menuIconsClass(menu);
+                            const Icon = item.Icon //This is for getting the icon from the object
+                            console.log(item)
+                            const theClasses = menuIconsClass(item.id);
                             return(
                                 <div className={theClasses}>
-                                    <Link href={menu.link}>
+                                    
+                                    <Link href={item.link}>
                                         <a className="flex py-4 px-3 items-center w-full h-full">
                                             <div>
-                                                <Icon/>
+                                                <Icon/> {/* And I'm trying to post the icon like this*/}
                                             </div>
                                             {!sideBar && (
                                                 <span className={classNames("text-md font-medium text-gray-400")}></span>
                                             )}
                                         </a>
                                     </Link>
-                                    {menu.label}
+                                    {item.label}
                                 </div>
                             )
                         })}
