@@ -1,4 +1,5 @@
-import {React, useState} from 'react';
+import { React } from 'react';
+import { AiFillLinkedin, AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai';
 import Layout from '../components/Layout'
 import { TypeAnimation  } from 'react-type-animation';
 
@@ -25,7 +26,15 @@ export default function Home() {
           repeat={Infinity}
           style={{fontSize:"3em"}}
         />
-
+        <div className="w-2/5 flex flex-row justify-start gap-5">
+          <button className="border-2 rounded border-cyan-600 p-2 px-3 hover:bg-slate-800">Resume</button>
+          <button className="text-5xl text-cyan-600">
+             <AiOutlineLinkedin/>
+          </button>
+          <button className="text-5xl text-cyan-600">
+            <AiOutlineGithub/>
+          </button>
+        </div>
       </div>
     </Layout>
   )
