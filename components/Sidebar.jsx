@@ -27,9 +27,9 @@ const Sidebar = () => {
 
     const activeMenu = useMemo(() => menuArray.find(menu=>menu.link===router.pathname), [router.pathname])
 
-    const divCSS = classNames('h-screen px-4 pt-8 pb-4 bg-black flex justify-between flex-col w-80',
+    const divCSS = classNames('h-screen px-4 pt-8 pb-4 bg-black flex justify-between flex-col',
                     {
-                        'w-80': !sideBar,
+                        'w-52': !sideBar,
                         'w-20': sideBar
                     });
 
@@ -43,6 +43,7 @@ const Sidebar = () => {
     {
         "right-0": !sideBar,
         "pl-2": sideBar,
+        "pt-12": sideBar
     });
 
     const collapseIconDivStyle = classNames("pl-1 gap-4",
@@ -58,8 +59,10 @@ const Sidebar = () => {
 
     const menuIconsClass = (menu) =>
     {
-        return classNames("flex items-center cursor-pointer hover:bg-slate-800 rounded w-full overflow-hidden whitespace-nowrap",
+        return classNames("flex items-center cursor-pointer hover:bg-slate-800 rounded overflow-hidden whitespace-nowrap",
                         {
+                            "w-full":!sideBar,
+                            "w-12":sideBar,
                             "bg-slate-800": activeMenu.id===menu.id
                         })
     };
@@ -89,16 +92,16 @@ const Sidebar = () => {
                                 <div className={theClasses}>
                                     
                                     <Link href={item.link}>
-                                        <a className="flex py-4 px-3 items-center w-full h-full">
-                                            <div>
+                                        <a className="flex py-4 px-4 items-center w-full h-full">
+                                            <div style={{width:"2.5rem"}}>
                                                 <Icon/> {/* And I'm trying to post the icon like this*/}
                                             </div>
                                             {!sideBar && (
-                                                <span className={classNames("text-md font-medium text-gray-400")}></span>
+                                                <span className={classNames("text-md font-medium text-red-400")}></span>
                                             )}
                                         </a>
                                     </Link>
-                                    {item.label}
+                                    {!sideBar && item.label}
                                 </div>
                             )
                         })}
