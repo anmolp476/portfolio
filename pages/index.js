@@ -27,7 +27,7 @@ export default function Home() {
           style={{fontSize:"3em"}}
         />
         <div className="w-2/5 flex flex-row justify-start gap-5">
-          <button className="border-2 rounded border-cyan-600 p-2 px-3 hover:bg-slate-800">
+          <button className="border-2 rounded font-bold text-cyan-600 border-cyan-600 p-2 px-3 hover:bg-slate-800">
             <a target="_blank" href="https://drive.google.com/file/d/1TJmFC8GNx3sTOb_LIm0o7pnhVd7Jcrpl/view?usp=sharing">
               Resume
             </a>
