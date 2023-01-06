@@ -46,7 +46,7 @@ const Sidebar = () => {
         "pt-12": sideBar
     });
 
-    const collapseIconDivStyle = classNames("pl-1 gap-4",
+    const collapseIconDivStyle = classNames("pl-3 gap-4",
     {
         ["flex items-center"]: !sideBar,
         ["hidden"]: sideBar,
@@ -75,7 +75,7 @@ const Sidebar = () => {
                     <div className={collapseIconDivStyle}>
                         <RiComputerLine style={logoIconStyle}/>
                         <span className={classNames('mt-2 text-lg font-medium text-white', {hidden:sideBar})}>
-                            Logo
+                            
                         </span>
                     </div>
                     <button className={collapseIconStyle} onClick={handleCollapse}>
@@ -99,9 +99,9 @@ const Sidebar = () => {
                                             {!sideBar && (
                                                 <span className={classNames("text-md font-medium text-red-400")}></span>
                                             )}
+                                            {!sideBar && item.label}
                                         </a>
                                     </Link>
-                                    {!sideBar && item.label}
                                 </div>
                             )
                         })}
