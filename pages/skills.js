@@ -6,10 +6,10 @@ import { DiGit } from 'react-icons/di';
 
 const Skills = () => {
   return (
-    <Layout className="relative">
+    <Layout className="">
       <div className="border border-solid">
 
-        <div className="w-3/6 absolute top-36 left-60 text-5xl">
+        <div className="w-3/6 text-5xl">
           <p className="">
             My Toolbox Of <span className="text-blue-700">Skills</span> & <span className="text-blue-700">Tools</span>
           </p>
