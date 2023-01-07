@@ -154,12 +154,7 @@ const Projects = () => {
                         Source
                       </button>
                     </a>
-
-                    <a target="_blank" className="w-1/3 h-8" href="https://anmolp476.github.io/REC2022Project/index.html">
-                      <button className="hover:bg-slate-700 mb-10 border w-full h-full text-sm border-cyan-500 pb-1 text-cyan-500 ring-4">
-                        Live
-                      </button>
-                    </a>
+                    
                   </div>
 
 
