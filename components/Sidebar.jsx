@@ -93,13 +93,13 @@ const Sidebar = () => {
                                     
                                     <Link href={item.link}>
                                         <a className="flex py-4 px-4 items-center w-full h-full">
-                                            <div style={{width:"2.5rem"}}>
+                                            <div style={{width:"2.5rem", color:"white"}}>
                                                 <Icon/> {/* And I'm trying to post the icon like this*/}
                                             </div>
                                             {!sideBar && (
                                                 <span className={classNames("text-md font-medium text-red-400")}></span>
                                             )}
-                                            {!sideBar && item.label}
+                                            {!sideBar && <p className="text-white">{item.label}</p>}
                                         </a>
                                     </Link>
                                 </div>
