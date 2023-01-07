@@ -21,13 +21,13 @@ const Sidebar = () => {
     ]
 
 
-    const [sideBar, toggleSidebar] = useState(false);
+    const [sideBar, toggleSidebar] = useState(true);
 
     const router = useRouter();
 
     const activeMenu = useMemo(() => menuArray.find(menu=>menu.link===router.pathname), [router.pathname])
 
-    const divCSS = classNames('z-10 border sm:static fixed border-dashed h-screen px-4 pt-8 pb-4 bg-black flex justify-between flex-col',
+    const divCSS = classNames('z-10 sm:static fixed h-screen px-4 pt-8 pb-4 bg-black flex justify-between flex-col',
                     {
                         'w-52': !sideBar,
                         'w-20': sideBar

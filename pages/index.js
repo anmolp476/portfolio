@@ -13,7 +13,7 @@ export default function Home() {
             Hi, <br></br>My name is <span className="text-blue-800">Anmol</span><br></br>
             I'm a
           </p>
-          <div className="mb-2 border border-dashed text-2xl sm:4xl md:text-5xl w-full">
+          <div className="mb-2 text-2xl sm:4xl md:text-5xl w-full">
             <TypeAnimation
               sequence={[
                 `Web Developer 💻`,
