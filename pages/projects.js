@@ -10,20 +10,20 @@ const Projects = () => {
   return (
     <Layout>
       <div name="The main container" className='w-full h-full -mt-20 p-2 flex flex-col sm:items-left'>
-        <div name="The header container" className="border border-dashed flex flex-col mt-20 ml-20 sm:ml-0 text-3xl sm:text-4xl w-3/4 sm:w-full">
+        <div name="The header container" className="flex flex-col mt-20 ml-20 sm:ml-0 text-3xl sm:text-4xl w-3/4 sm:w-full">
           <p>
             <span className="text-blue-700">Projects</span> I've Completed So Far,
           </p>
         </div>
         
-        <div className="flex flex-col  md:items-left sm:items-left h-full border border-red-900 border-dashed">
-          <div name="The projects container" className="gap-6 mb-36 sm:mb-0 pt-4 ml-16 sm:ml-0 mr-4 sm:mr-64 grid grid-cols-2 sm:grid-cols-3 sm:grid-rows-2 h-full border border-dashed">
+        <div className="flex flex-col  md:items-left sm:items-left h-full border-red-900">
+          <div name="The projects container" className="gap-6 mb-36 sm:mb-0 pt-4 ml-16 sm:ml-0 mr-4 sm:mr-64 grid grid-cols-2 sm:grid-cols-3 sm:grid-rows-2 h-full">
             <div name="Project #1 container border" className="p-2 shadow-lg shadow-[#000000] h-32 w-36 sm:h-48 sm:w-52">
               <div name="Project #1 container" className="group bg-cover bg-no-repeat bg-start h-full w-full"
                 style={{backgroundImage:`url(${PhoneBookImg.src})`}}>
           
                   <div name="Project #1 details container"
-                  className="border border-dashed flex flex-col justify-center font-semi-bold sm:font-bold items-center pt-8 
+                  className="flex flex-col justify-center font-semi-bold sm:font-bold items-center pt-8 
                              opacity-0 w-full text-sm sm:text-md h-full group-hover:bg-slate-800 group-hover:opacity-100 group-hover:backdrop-blur-sm duration-300">
           
                     <span className="text-center mb-4 sm:mb-10 w-auto text-cyan-500">
