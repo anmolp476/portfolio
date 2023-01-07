@@ -26,7 +26,7 @@ const Projects = () => {
                   className="flex flex-col justify-center sm:font-bold items-center pt-8 
                              opacity-0 w-full text-sm sm:text-md h-full group-hover:bg-slate-800 group-hover:opacity-100 group-hover:backdrop-blur-sm duration-300">
           
-                    <span className="text-center mb-4 sm:mb-10 w-auto text-cyan-500">
+                    <span className="text-center mb-4 sm:mb-10 w-auto text-cyan-500 select-none">
                       Fullstack Phone Book M.E.R.N. App
                     </span>
                     <div name="buttons wrapper" className="mb-8 flex flex-row justify-around w-full">
@@ -51,7 +51,7 @@ const Projects = () => {
                   <div name="Project #2 details container"
                   className="flex flex-col justify-center sm:font-bold items-center pt-8 text-sm sm:text-md opacity-0 w-full h-full group-hover:bg-slate-800 group-hover:opacity-100 group-hover:backdrop-blur-sm duration-300">
           
-                    <span className="text-center mb-4 sm:mb-10 w-auto text-cyan-500">
+                    <span className="text-center mb-4 sm:mb-10 w-auto text-cyan-500 select-none">
                       Country Data Finder
                     </span>
                     <div name="buttons wrapper" className="mb-8 flex flex-row justify-around w-full">
@@ -76,7 +76,7 @@ const Projects = () => {
                   <div name="Project #3 details container"
                   className="flex flex-col justify-center font-light sm:font-bold items-center pt-8 text-md opacity-0 w-full h-full group-hover:bg-slate-800 group-hover:opacity-100 group-hover:backdrop-blur-sm duration-300">
           
-                    <span className="text-center sm:text-md text-sm mb-4 sm:mb-10 w-auto text-cyan-500">
+                    <span className="text-center sm:text-md text-sm mb-4 sm:mb-10 w-auto text-cyan-500 select-none">
                       Magic 8 Ball App
                     </span>
                     <div name="buttons wrapper" className="mb-8 flex flex-row justify-around w-full">
@@ -96,7 +96,7 @@ const Projects = () => {
                   <div name="Project #4 details container"
                   className="flex flex-col justify-center font-light sm:font-bold items-center pt-8 text-md opacity-0 w-full h-full group-hover:bg-slate-800 group-hover:opacity-100 group-hover:backdrop-blur-sm duration-300">
           
-                    <span className="text-center mb-4 sm:mb-10 w-auto text-cyan-500">
+                    <span className="text-center mb-4 sm:mb-10 w-auto text-cyan-500 select-none">
                       My Portfolio Website
                     </span>
                     <div name="buttons wrapper" className="mb-8 flex flex-row justify-around w-full">
@@ -121,7 +121,7 @@ const Projects = () => {
                   <div name="Project #5 details container"
                   className="flex flex-col justify-center font-light sm:font-bold items-center pt-8 text-md opacity-0 w-full h-full group-hover:bg-slate-800 group-hover:opacity-100 group-hover:backdrop-blur-sm duration-300">
           
-                    <span className="text-center mb-4 sm:mb-10 w-auto text-cyan-500">
+                    <span className="text-center mb-4 sm:mb-10 w-auto text-cyan-500 select-none">
                       World Growth Rate Predictor
                     </span>
                     <div name="buttons wrapper" className="mb-8 flex flex-row justify-around w-full">
