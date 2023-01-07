@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <div className="flex flex-col mt-24 w-4/6 items-center sm:ml-0 ml-20">
+      <div className="flex flex-col mt-24 w-4/6 items-center sm:-ml-16 ml-20">
         <div name="This is created so I can edit the everything in the homepage at once">
           <p className="md:text-7xl text-4xl">
             Hi, <br></br>My name is <span className="text-blue-800">Anmol</span><br></br>
