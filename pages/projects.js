@@ -124,7 +124,7 @@ const Projects = () => {
                       </button>
                     </a>
 
-                    <a target="_blank" className="w-1/3 h-8" href="https://portfolio-anmolp476.vercel.app/">
+                    <a target="_blank" className="w-1/3 h-8" href="https://portfolio-anmolp476.vercel.app">
                       <button className="hover:bg-slate-700 mb-10 border w-full h-full text-sm border-cyan-500 pb-1 text-cyan-500 ring-4">
                         Live
                       </button>
