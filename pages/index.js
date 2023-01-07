@@ -29,8 +29,8 @@ export default function Home() {
             />
           </div>
           <div className="w-2/5 flex flex-row justify-start gap-5">
-            <button className="border-2 rounded font-bold text-cyan-600 border-cyan-600 p-2 px-3 hover:bg-slate-800">
-              <a target="_blank" href="https://drive.google.com/file/d/1NXWq7RsmwE540KurXUTvyHWYeKYbMRA5/view?usp=sharing">
+            <button className="border-2 rounded font-bold text-cyan-600 border-cyan-600 hover:bg-slate-800">
+              <a target="_blank" className='border border-dashed px-4 py-3' href="https://drive.google.com/file/d/1NXWq7RsmwE540KurXUTvyHWYeKYbMRA5/view?usp=sharing">
                 Resume
               </a>
             </button>
