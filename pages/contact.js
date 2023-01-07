@@ -23,8 +23,8 @@ const Contact = () => {
 
           <div name="This will contain the input elements" className="flex flex-col gap-2 w-full">
             <input name="name" className="bg-white w-full rounded p-2 text-black" type="text" placeHolder="Your Name..."></input>
-            <input name="email" className="bg-white w-full my-4 p-2 rounded text-black" type="email" placeholder="Your Email..."></input>
-            <textarea name="message" className="bg-white w-full rounded p-2 text-black -mb-4" rows="10" placeholder="Hi there..."></textarea>
+            <input name="email" className="bg-white w-full my-4 p-2 rounded text-black" type="email" placeholder="Your Email..." required></input>
+            <textarea name="message" className="bg-white w-full rounded p-2 text-black -mb-4" rows="10" placeholder="Hi there..." required></textarea>
           </div>
 
           <div name="This div will contain only the button. I covered it with a div so I can style the button easier" 
