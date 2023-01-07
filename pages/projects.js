@@ -16,7 +16,7 @@ const Projects = () => {
           </p>
         </div>
         
-        <div name="The projects container" className="p-4 pr-24 mr-8 pl-0 grid grid-cols-3 h-full">
+        <div name="The projects container" className="p-4 pr-24 mr-64 pl-0 grid sm:grid-cols-3 sm:grid-rows-2 h-full border border-dashed">
 
           <div name="Project #1 container border" className="p-2 shadow-lg shadow-[#000000]  h-48 w-52">
             <div name="Project #1 container" className="group bg-cover bg-no-repeat bg-start h-full w-full" 
@@ -154,7 +154,7 @@ const Projects = () => {
                         Source
                       </button>
                     </a>
-                    
+
                   </div>
 
 

@@ -7,15 +7,15 @@ import { DiGit } from 'react-icons/di';
 const Skills = () => {
   return (
     <Layout>
-      <div className="flex flex-col py-12 my-12 mr-0 w-4/6 items-start">
+      <div className="flex flex-col py-12 mt-10 sm:my-12 mr-0 w-4/6 items-start ml-20 sm:ml-0">
 
         <div className="flex flex-col items-center">
-          <div className="text-5xl text-center">
+          <div className="sm:text-5xl text-3xl text-center">
             <p className="">
               My Toolbox Of <span className="text-blue-700">Skills</span> & <span className="text-blue-700">Tools</span>
             </p>
           </div>
-          <div className=" grid grid-cols-4 grid-rows-2 gap-3 p-4 px-5 py-8 top-48 left-56 overflow-hidden text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-4 sm:grid-rows-2 gap-3 p-4 px-5 py-8 top-48 left-56 text-center">
             <div className="flex flex-col items-center shadow-md mx-1 py-2 px-2 shadow-[#00000085] hover:scale-110 duration-500 text-6xl">
               <SiMongodb/>
               <p className="text-2xl">MongoDB</p>
