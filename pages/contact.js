@@ -28,7 +28,7 @@ const Contact = () => {
           </div>
 
           <div name="This div will contain only the button. I covered it with a div so I can style the button easier" 
-               className="w-1/5 flex flex-row border border-dashed justify-center mb-40 sm:mb-4 -mt-8">
+               className="w-1/5 flex flex-row justify-center mb-40 sm:mb-4 -mt-8">
             <button className="text-white border-2 hover:bg-blue-700 hover:border-blue-700 px-10 sm:px-4 py-0 sm:py-3 my-14 sm:my-8 mx-auto flex items-center">Let's Talk!</button>
           </div>
         </form>
