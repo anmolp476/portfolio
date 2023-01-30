@@ -1,7 +1,7 @@
 import { React } from 'react';
 import { AiFillLinkedin, AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai';
 import Layout from '../components/Layout'
-import { TypeAnimation  } from 'react-type-animation';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Home() {
 
@@ -30,18 +30,18 @@ export default function Home() {
           </div>
           <div className="w-2/5 flex flex-row justify-start gap-5">
             <button className="border-2 rounded font-bold text-cyan-600 border-cyan-600 hover:bg-slate-800">
-              <a target="_blank" className='px-4 py-3' href="https://drive.google.com/file/d/1NXWq7RsmwE540KurXUTvyHWYeKYbMRA5/view?usp=sharing">
+              <a target="_blank" className='px-4 py-3' href="https://drive.google.com/file/d/1zHGqUDXiEx6zRajuW39z4GmT-EOmixTc/view?usp=sharing">
                 Resume
               </a>
             </button>
             <button className="text-5xl text-cyan-600">
-               <a target="_blank" href="https://www.linkedin.com/in/panchal2003/">
-                <AiOutlineLinkedin/>
-               </a>
+              <a target="_blank" href="https://www.linkedin.com/in/panchal2003/">
+                <AiOutlineLinkedin />
+              </a>
             </button>
             <button className="text-5xl text-cyan-600">
               <a target="_blank" href="https://github.com/anmolp476">
-                <AiOutlineGithub/>
+                <AiOutlineGithub />
               </a>
             </button>
           </div>
