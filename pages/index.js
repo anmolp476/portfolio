@@ -30,7 +30,7 @@ export default function Home() {
           </div>
           <div className="w-2/5 flex flex-row justify-start gap-5">
             <button className="border-2 rounded font-bold text-cyan-600 border-cyan-600 hover:bg-slate-800">
-              <a target="_blank" className='px-4 py-3' href="https://drive.google.com/file/d/1NbYINUdqrmdDw9y6gDc4rZdLQcG5fSeW/view?usp=sharing">
+              <a target="_blank" className='px-4 py-3' href="https://drive.google.com/file/d/1FlZZEvkOIkud8eRRpHf-3gl1jUWlCyV9/view?usp=sharing">
                 Resume
               </a>
             </button>
